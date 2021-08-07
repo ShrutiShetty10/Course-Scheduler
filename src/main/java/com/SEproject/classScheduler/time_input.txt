@@ -1,0 +1,8 @@
+rooms
+101:15
+102:250
+103:50;
+courses
+cs101,cs501,cs504,cs502;
+times
+MWF9,MWF10,TT10:30,TT2;

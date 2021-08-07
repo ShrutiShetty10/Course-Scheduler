@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Class Schedule</title>
+<link th:href="@{/css/home.css}" rel="stylesheet" />
+</head>
+<body>
+
+<h1><span class="blue"></span>Class<span class="blue"></span> <span class="yellow">Scheduler</span></h1>
+<!--<h2>Created with love by <a href="https://github.com/pablorgarcia" target="_blank">Pablo García</a></h2>  -->
+
+<table class="container">
+
+	<thead>
+		<tr>
+			
+			<th><h1>Time</h1></th>
+			<th><h1>Rooms</h1></th>
+			<th><h1>Course ID</h1></th>
+			
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:each="scheduler: ${list}">
+		
+        <td th:text="${scheduler.getTime()}" />
+        <td th:text="${scheduler.getRoom_no()}" />
+        <td th:text="${scheduler.getCourse()}" />
+    </tr>
+		
+	
+
+ 
+
+	</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,4 @@
+course enrollment preferences
+cs101 180 MWF9,MWF10,MWF11,TT9
+cs612 35 MWF9
+cs630 40 MWF10
